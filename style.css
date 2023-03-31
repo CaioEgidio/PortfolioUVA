@@ -1,0 +1,508 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Merriweather&family=Poppins:ital,wght@1,500&family=Righteous&family=Sarala&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: 100;
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    margin-bottom: 48px;
+    
+}
+
+
+.cabecalho-menu {
+    display: flex;
+    gap: 32px;
+}
+
+.cabecalho-menu-item {
+    font-family: 'Sarala', sans-serif;
+    color: black;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.conteudo {
+    margin-bottom: 48px;
+    
+}
+
+.conteudo-principal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    animation: fade-up 0.5s;
+}
+
+.conteudo-principal-escrito {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.conteudo-principal-escrito-titulo {
+    font-family: 'Righteous', cursive;
+    font-weight: 400;
+    font-size: 60px;
+    color: black;
+}
+
+
+.conteudo-principal-escrito-subtitulo {
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #434242;
+}
+
+.conteudo-principal-escrito-botão {
+    background-color: #ecd6c4;
+    width: 180px;
+    height: 67px;
+    border: none;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+    font-size: 21px;
+    color: #2f2325
+}
+
+.conteudo-principla-imagem {
+    height: 430px;
+}
+
+.conteudo-secundario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-top: 48px;
+    animation: fade-up 0.5s;
+}
+
+.conteudo-secundario-titulo {
+    border-top: 0.4px solid black;
+    padding-top: 48px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 24px;
+    color: black;
+}
+
+.conteudo-secundario-paragrafo {
+    font-family: 'Sarala', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: #434242;
+    text-align: center;
+    margin-left: 350px;
+    margin-right: 350px;
+     
+}
+
+.imagem{
+    width: 300px;
+    height: 300px;
+    border-radius: 30%;
+    border: 4px solid;
+    border-color: #2C74B3;
+}
+
+.gradiente {
+   background-color: white;
+    
+   }
+   
+   
+    @keyframes colors {
+       0% {
+           background-position: 0% 50%;
+       }
+   
+       50% {
+           background-position: 100% 50%;
+       }
+   
+       100% {
+           background-position: 0% 50%;
+       }
+   
+    }
+
+    .cabecalho-menu-logo {
+        color: white;
+        font-family: 'Sarala', sans-serif; 
+        justify-content: right;
+    }
+
+    .menu-interativo {
+        background-color: white;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        position: fixed;
+    }
+
+    .icones {
+        width: 50px;
+        height: 50px;
+    }
+
+    #skills {
+        font-size: 20px;
+        margin: 45px auto;
+        overflow: hidden;
+    }
+
+    .skillsbar {
+        width: 60%;
+        height: 30px;
+        background-color: rgb(216, 216, 216);
+        border-radius: 1000px;
+        text-transform: uppercase;
+        margin: 35px auto; 
+    }
+
+    .skillarea {
+        font-size: 16px;
+        z-index: 1;
+        position: absolute;
+        margin-top: 3px;
+        margin-left: 15px;
+        text-shadow: none;
+        color: whitesmoke;
+        font-family: 'Sarala', sans-serif;
+    }
+
+    .percentage {
+        z-index: 3;
+        position: relative;
+        margin-right: 15px;
+        margin-top: 5px;
+        float: right;
+        text-shadow: none;
+        color: whitesmoke;
+        font-family: 'Sarala', sans-serif;
+        font-size: 13px;
+
+    }
+
+
+    #html {
+        width: 80%;
+        animation: animate-html 3s;
+        height: 30px;
+        position: relative;
+        border-radius: 1000px;
+        background-color: #0A2647;
+    }
+
+    #css {
+        width: 70%;
+        animation: animate-css 3s;
+        height: 30px;
+        position: relative;
+        border-radius: 1000px;
+        background-color: #144272;
+    }
+
+    #javascript {
+        width: 50%;
+        animation: animate-javascript 3s;
+        height: 30px;
+        position: relative;
+        border-radius: 1000px;
+        background-color: #205295;
+    }
+
+
+    #Python {
+        width: 20%;
+        animation: animate-Python 3s;
+        height: 30px;
+        position: relative;
+        border-radius: 1000px;
+        background-color: #2C74B3;
+    }
+
+    @keyframes animate-html {
+        from {width: 0px;}
+        to { width: 80%;}
+    }
+
+    @keyframes animate-css {
+        from {width: 0px;}
+        to { width: 70%;}
+    }
+
+    @keyframes animate-javascript {
+        from {width: 0px;}
+        to { width: 50%;}
+    }
+
+    @keyframes animate-Python {
+        from {width: 0px;}
+        to { width: 20%;}
+    }
+
+    .conteudo-secundario-paragrafo-terceiro {
+        font-family: 'Sarala', sans-serif;
+        font-size: 18px;
+        color: #434242;
+        text-align: justify;
+        text-indent: 30px;
+        margin-left: 300px;
+        margin-right: 300px;
+        }
+
+        .conteudo-secundario-titulo-terceiro {
+            padding-top: 1px;
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 24px;
+            color: black;
+            text-align: center;
+            animation: fade-up 0.5s;
+        }
+
+.stacks {
+    font-family: 'Sarala', sans-serif;
+    font-size: 18px;
+    color: #434242;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    
+}
+
+.iconeslinguagem{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+.iconeslinguagem2 {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 100%;
+}
+ 
+
+form {
+    max-width: 350px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  input,
+  textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #ccc;
+    border-radius: 50px;
+    font-size: 16px;
+  }
+  
+  button {
+    padding: 10px;
+    background-color: #19A7CE;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: grey;
+  }
+  
+.texto {
+    font-family: 'IBM Plex Mono', monospace;
+    color: #434242;;
+}
+
+.redesociais {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-left: 610px;
+    margin-top: 70px;
+    
+}
+
+.formulario123 {
+    margin-right: 0px;
+    animation: fade-up 0.5s;
+    
+
+}
+
+.stacks123 {
+    font-family: 'Sarala', sans-serif;
+    font-size: 18px;
+    color: #434242;
+   
+    
+}
+
+
+.card {
+    max-width: 300px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    overflow: hidden;
+  }
+  
+  .card img {
+    width: 300px;
+    height: 200px;
+    display: block;
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  
+  .card-body h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .card-body p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2C74B3;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 16px;
+    font-family: 'Sarala', sans-serif;
+    transition: background-color 0.2s ease;
+    margin-top: 10px;
+  }
+  
+  .button:hover {
+    background-color: #002B5B;
+  }
+  
+
+.cardsconteudo {
+    display: flex;
+    flex-direction: row;
+    animation: fade-up 0.5s;
+}
+
+.cardfont {
+    font-family: 'Sarala', sans-serif;
+}
+
+.cardsespaço {
+    display: flex;
+    flex-direction: row;
+    animation: fade-up 0.5s;
+    
+}
+
+.conteudo-secundario-titulo-terceiro-cards {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 24px;
+    color: black;
+    text-align: center;
+    margin-left: 270px;
+    padding-bottom: 5%;
+}
+.textoauau {
+    font-family: 'Sarala', sans-serif; 
+}
+
+.textoaiai {
+    font-family: 'Sarala', sans-serif;
+}
+
+.cardgrandão {
+    width: 1000px;
+    height: 600px;
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    overflow: hidden;
+}
+
+.cardtextograndão {
+    margin-left: 70px;
+    margin-right: 90px;
+    margin-top: 70px;
+}
+
+.conteudo-principal-escrito-subtitulo-card {
+    padding-top: 10px;
+    font-family: 'Righteous', cursive;
+    font-weight: 200;
+    font-size: 40px;
+    color: black;
+}
+
+.conteudo-principal-escrito-subtitulo-card-titulo {
+    margin-left: 420px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 24px;
+    color: black;
+
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #002B5B;
+}
+
+@keyframes fade-up {
+0% {
+    opacity: 0;
+    transform: translateY(30px) scale(0.9);
+}
+
+
+100%{
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+}
+}
+
+.rodape {
+    animation: fade-up 0.5s;
+}
+
